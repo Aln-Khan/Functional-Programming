@@ -1,0 +1,137 @@
+body {
+  background-color: #1f1e1e;
+  color: white;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-wrapper {
+  background-color: #353434;
+  padding: 1.5rem;
+  width: fit-content;
+  margin: 1.5rem auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 3px;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(78, 77, 77);
+  padding-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.input-items {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+
+.input-items label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.input-items input {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 2px;
+  width: 15vw;
+}
+
+.input-items input:focus {
+  outline: 2px solid rgb(255, 255, 255);
+}
+
+.input-items input:hover {
+  box-shadow: 0px 1px 3px rgb(168, 165, 165);
+}
+
+.input-add-btn {
+  background-color: rgb(0, 230, 122);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  margin-top: 25px;
+  height: 1.8rem;
+  padding: 0.4rem;
+  width: 4vw;
+  cursor: pointer;
+}
+
+.input-add-btn:hover {
+  background-color: rgb(1, 197, 106);
+}
+
+.secondary-btn {
+  background-color: rgb(71, 71, 71);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  padding: 0.5rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(0, 230, 122);
+}
+
+.todo-list-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list-item {
+  background-color: #414040;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  margin-top: 0.7rem;
+  box-shadow: 0px 2px 2px rgb(43, 42, 42);
+}
+
+.todo-list-item h3 {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin: 0;
+  padding: 0.2rem 0;
+}
+
+.todo-list-item p {
+  font-size: 0.8rem;
+  color: rgb(161, 161, 161);
+  margin: 0;
+  padding: 0.3rem 0;
+}
+
+
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: red;
+}
+
+.check-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 0.4rem;
+  color: rgb(0, 230, 122);
+}
+
+.check-icon:hover {
+  color: rgb(1, 197, 106);
+}
